@@ -6,6 +6,9 @@ let secondPasswordEd = document.getElementById("two")
 
 async function randomPassword(length) {
  for (let i = 0; i < characters.length; i++) {
+         let password1 = '';
+        let password2 = '';
+        
         let randomNumber = Math.floor(Math.random() * characters.length);
         password1 += characters[randomNumber];
         firstPasswordEd.textContent = password1;
