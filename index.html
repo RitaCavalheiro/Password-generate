@@ -11,7 +11,11 @@
             <p>Never use an insecure password again.</p>
             <input placeholder="Length of password" type="number" id="passwordLength" required></input>
             <br/>
-
+            <label for="include-symbols">Include symbols</label>
+            <input type="checkbox" id="include-symbols" name="include-symbols">
+            <label for="include-numbers">Include numbers</label>
+            <input type="checkbox" id="include-numbers" name="include-numbers">
+            <br/>
             <button onclick="randomPassword(passwordLength.value)">Generate passwords</button>
             <div>
                 <p class="password" id="one"> </p> 
