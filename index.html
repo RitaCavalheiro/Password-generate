@@ -1,12 +1,15 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Karla:wght@800&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="container">
             <h1>Generate a <span class="h1Color"><br/>random password</span></h1>
             <p>Never use an insecure password again.</p>
-            <button>Generate passwords</button>
+            <button onclick="randomPassword(15)">Generate passwords</button>
             <div>
                 <p class="password" id="one"> </p> 
                 <p class="password" id="two"> </p>
