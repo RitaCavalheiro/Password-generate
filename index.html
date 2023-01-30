@@ -9,7 +9,10 @@
         <div class="container">
             <h1>Generate a <span class="h1Color"><br/>random password</span></h1>
             <p>Never use an insecure password again.</p>
-            <button onclick="randomPassword(15)">Generate passwords</button>
+            <input placeholder="Length of password" type="number" id="passwordLength" required></input>
+            <br/>
+
+            <button onclick="randomPassword(passwordLength.value)">Generate passwords</button>
             <div>
                 <p class="password" id="one"> </p> 
                 <p class="password" id="two"> </p>

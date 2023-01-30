@@ -62,3 +62,7 @@ button {
     display: inline-block;
     vertical-align: top;
 }
+
+ #passwordLength{
+     width: 40px;
+ }

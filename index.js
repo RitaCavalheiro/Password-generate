@@ -4,11 +4,17 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 let firstPasswordEd = document.getElementById("one")
 let secondPasswordEd = document.getElementById("two")
 
-async function randomPassword(length) {
+async function randomPassword() {
+let passwordLength = document.getElementById("passwordLength").value;
+
  for (let i = 0; i < characters.length; i++) {
-         let password1 = '';
+        let password1 = '';
         let password2 = '';
-        
+
+        if (passwordLength == null || passwordLength <= 0){
+        alert("Please enter a number bigger than 0 to set the length of your password")
+        }
+
         let randomNumber = Math.floor(Math.random() * characters.length);
         password1 += characters[randomNumber];
         firstPasswordEd.textContent = password1;
