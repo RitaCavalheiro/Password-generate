@@ -44,3 +44,23 @@ async function randomPassword() {
         secondPasswordEd.textContent = password2;
     } 
 }
+
+firstPasswordEd.onclick = () => {
+    let input = document.createElement('input');
+    input.value = firstPasswordEd.textContent;
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand('copy');
+    alert("Password copied to clipboard!");
+    document.body.removeChild(input);
+}
+
+secondPasswordEd.onclick = () => {
+    let input = document.createElement('input');
+    input.value = secondPasswordEd.textContent;
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand('copy');
+    alert("Password copied to clipboard!");
+    document.body.removeChild(input);
+}
